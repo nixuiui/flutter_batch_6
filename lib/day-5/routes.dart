@@ -2,12 +2,14 @@ import 'package:flutter_batch_6/day-4/gridview_builder_page.dart';
 import 'package:flutter_batch_6/day-4/gridview_count_page.dart';
 import 'package:flutter_batch_6/day-4/gridview_page.dart';
 import 'package:flutter_batch_6/day-5/home_page.dart';
+import 'package:flutter_batch_6/day-6/pages/counter_page.dart';
 
 class AppRoutes {
   static const String home = '/';
   static const String gridView = '/gridview';
   static const String gridViewCount = '/gridview-count';
   static const String gridViewBuilder = '/gridview-builder';
+  static const String counter = '/counter';
 }
 
 final routes = {
@@ -15,4 +17,5 @@ final routes = {
   AppRoutes.gridView: (context) => const GridviewPage(),
   AppRoutes.gridViewCount: (context) => const GridviewCountPage(),
   AppRoutes.gridViewBuilder: (context) => const GridviewBuilderPage(),
+  AppRoutes.counter: (context) => const CounterPage(),
 };

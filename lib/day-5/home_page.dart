@@ -3,6 +3,7 @@ import 'package:flutter_batch_6/day-5/main_page.dart';
 import 'package:flutter_batch_6/day-5/notification_page.dart';
 import 'package:flutter_batch_6/day-5/profile_page.dart';
 import 'package:flutter_batch_6/day-5/setting_page.dart';
+import 'package:flutter_batch_6/day-6/pages/theme_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -50,10 +51,13 @@ class _HomePageState extends State<HomePage> {
           },
         ),
         NotificationPage(),
+        ThemePage(),
       ][index],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: index,
         onTap: (value) => setState(() => index = value),
+        unselectedItemColor: Colors.grey,
+        selectedItemColor: Colors.black,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -66,6 +70,10 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.notifications),
             label: 'Notification',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.color_lens),
+            label: 'Theme',
           ),
         ]
       ),
