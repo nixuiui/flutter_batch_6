@@ -1,9 +1,9 @@
 import 'package:drift/drift.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_batch_6/day-7/db/app_db.dart';
-import 'package:flutter_batch_6/day-7/db/product_db.dart';
+import 'package:flutter_batch_6/day-7/data/db/app_db.dart';
+import 'package:flutter_batch_6/day-7/data/db/product_db.dart';
 import 'package:flutter_batch_6/day-7/pages/product_form_page.dart';
-import 'package:flutter_batch_6/main.dart';
+import 'package:flutter_batch_6/injector.dart';
 
 class ProductPage extends StatefulWidget {
   const ProductPage({super.key});

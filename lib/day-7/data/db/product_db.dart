@@ -1,4 +1,4 @@
-import 'package:flutter_batch_6/day-7/db/app_db.dart';
+import 'package:flutter_batch_6/day-7/data/db/app_db.dart';
 
 class ProductDb {
 
